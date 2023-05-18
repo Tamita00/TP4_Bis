@@ -1,0 +1,7 @@
+﻿<h2>Tocá la bandera del país que quieras conocer:</h2>
+@foreach (Pais pais in ViewBag.listaPaises)
+{
+    <a href='@Url.Action("DetallePais", new {nombrePais = pais.nombre})'>
+        <img src = "/Img/@pais.imgBandera" alt ="Foto bandera" width = "300px">  
+    </a>
+}
