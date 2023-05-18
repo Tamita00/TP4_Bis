@@ -2,9 +2,11 @@
     <img src = "/Img/flechaAtras.png" alt ="Flechita" width = "30px">  
 </a>
 
-<p> Nombre del País: @ViewBag.pais.nombre</p>
+<h2> @ViewBag.pais.nombre</h2>
 <p> Población que habita en él: @ViewBag.pais.poblacion</p>
 <p> Fecha en la cual se independizó: @ViewBag.pais.fechaIndependencia.ToShortDateString()</p>
 <p> Una de las diferentes actividades turísticas: @ViewBag.pais.atractivosTuristico</p>
-<p> Bandera del País: </p><img src = "/Img/@ViewBag.pais.imgBandera" alt ="Foto bandera" width = "200px">
 <p> Himno del País: <a href='@ViewBag.pais.urlHimno'>@ViewBag.pais.nombre</a></p>
+<div class = "ImagenBandera">
+    <p> Bandera del País: </p><img src = "/Img/@ViewBag.pais.imgBandera" alt ="Foto bandera" width = "200px">
+</div>
